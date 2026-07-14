@@ -1,0 +1,75 @@
+.budget-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.budget-form .field {
+  margin-bottom: 0;
+  min-width: 160px;
+}
+
+.budget-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.budget-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.budget-item-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.budget-item-name {
+  font-weight: 600;
+}
+
+.budget-item-amounts {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  color: var(--color-ink-muted);
+  font-size: 13px;
+}
+
+.budget-bar-track {
+  width: 100%;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--color-surface-alt);
+  overflow: hidden;
+}
+
+.budget-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.budget-bar-fill.ok {
+  background: var(--color-emerald);
+}
+.budget-bar-fill.warning {
+  background: var(--color-gold);
+}
+.budget-bar-fill.exceeded {
+  background: var(--color-brick);
+}
+
+.budget-status-text {
+  font-size: 12px;
+}
+.budget-status-text.warning {
+  color: var(--color-gold);
+}
+.budget-status-text.exceeded {
+  color: var(--color-brick);
+}

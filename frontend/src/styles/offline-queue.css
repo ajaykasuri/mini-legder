@@ -1,0 +1,47 @@
+.offline-queue-card {
+  margin-bottom: 20px;
+  border-color: var(--color-gold);
+}
+
+.offline-queue-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.offline-queue-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-alt);
+  font-size: 13.5px;
+}
+
+.offline-queue-row.needs-attention {
+  background: var(--color-brick-soft);
+}
+
+.offline-queue-desc {
+  margin-left: 10px;
+  color: var(--color-ink-muted);
+}
+
+.offline-queue-amount {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+}
+
+.offline-queue-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.offline-queue-waiting {
+  font-size: 12px;
+  color: var(--color-ink-muted);
+}

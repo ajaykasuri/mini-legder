@@ -1,0 +1,79 @@
+/*
+  Design direction: "the ledger book, digitized."
+  A real paper ledger is pale sage/ivory paper with dark green-black ink,
+  ruled lines, and figures kept in neat columns. We lean into that instead
+  of a generic dashboard look: monospaced tabular numerals, a dotted rule
+  under every amount (like a ledger line), and a restrained two-color
+  system for income (deep emerald) vs. expense (brick red) that never
+  turns into a rainbow of category colors.
+*/
+
+:root {
+  /* Surfaces */
+  --color-bg: #f6f8f6;
+  --color-surface: #ffffff;
+  --color-surface-alt: #eef2ef;
+  --color-border: #dce3de;
+
+  /* Ink */
+  --color-ink: #142420;
+  --color-ink-muted: #5b6b65;
+  --color-ink-faint: #93a19c;
+
+  /* Brand / income */
+  --color-emerald: #2f6f5e;
+  --color-emerald-dark: #1f4f42;
+  --color-emerald-soft: #e3efea;
+
+  /* Expense / alert-critical */
+  --color-brick: #b94a3d;
+  --color-brick-soft: #f7e6e2;
+
+  /* Warning (80% budget) */
+  --color-gold: #c08a2e;
+  --color-gold-soft: #f5ebd8;
+
+  /* Type */
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  /* Layout */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --shadow-card: 0 1px 2px rgba(20, 36, 32, 0.04), 0 4px 12px rgba(20, 36, 32, 0.05);
+}
+
+[data-theme="dark"] {
+  --color-bg: #10201c;
+  --color-surface: #16302a;
+  --color-surface-alt: #1c3a32;
+  --color-border: #2a4a41;
+
+  --color-ink: #eaf3f0;
+  --color-ink-muted: #a7bdb6;
+  --color-ink-faint: #6f8981;
+
+  --color-emerald: #56b39a;
+  --color-emerald-dark: #7fcdb6;
+  --color-emerald-soft: #1d3d35;
+
+  --color-brick: #e08072;
+  --color-brick-soft: #3a2420;
+
+  --color-gold: #dcb15b;
+  --color-gold-soft: #3a301c;
+
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Ledger-line signature: a dotted baseline under any figure, evoking the
+   ruled line under a handwritten amount in a paper ledger. */
+.ledger-figure {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  border-bottom: 1px dotted var(--color-border);
+  padding-bottom: 2px;
+  display: inline-block;
+}
