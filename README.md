@@ -38,6 +38,23 @@ Rather than implementing only the required CRUD functionality, the project focus
 
 ---
 
+# Screenshots
+
+## Dashboard
+
+![Dashboard](./screenshots/Dashboard.png)
+
+## Dashboard theme
+
+![Theme](./screenshots/Dashboard_Light_theme.png)
+
+## Daily Spending Lock
+
+![Spending Lock](./screenshots/DailyLimit.png)
+
+## Transaction
+![Spending Lock](./screenshots/Transactions.png)
+
 # Features
 
 ### Authentication
